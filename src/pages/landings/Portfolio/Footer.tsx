@@ -9,10 +9,13 @@ const Footer = () => {
                     <Col className="text-center">
                         <ul className="list-inline list-with-separator">
                             <li className="list-inline-item me-0">
-                                <Link to="#">About</Link>
+                                <Link to="#pricing-section">Pricing</Link>
                             </li>
                             <li className="list-inline-item me-0">
-                                <Link to="#">Services</Link>
+                                <Link to="#about-me">About</Link>
+                            </li>
+                            <li className="list-inline-item me-0">
+                                <Link to="#portfolio-grid">Portfolio</Link>
                             </li>
                             <li className="list-inline-item me-0">
                                 <Link to="#">Contact</Link>

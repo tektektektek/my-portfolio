@@ -33,7 +33,7 @@ const ContactUs = () => {
     const onSubmit = () => { };
 
     return (
-        <section className="section pb-lg-5 py-4 position-relative">
+        <section id='contact-me' className="section pb-lg-5 py-4 position-relative">
             <Container>
                 <Row className="align-items-center">
                     <Col lg={6}>

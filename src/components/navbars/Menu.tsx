@@ -69,12 +69,10 @@ const Menu = ({ navClass, buttonClass, showDownload, loggedInUser }: MenuProps) 
             </Nav.Item>
             <Nav.Item as="li">
                 <NavLink
-                    to="/pages/Contact"
+                    to="#contact-me"
                     end
-                    className={classNames(
-                        'nav-link',
-                        ({ ...isActive }) => isActive && 'active'
-                    )}
+                    className={classNames('nav-link', ({ ...isActive }) => isActive && 'active')}
+                    onClick={() => handleScrollToElement('contact-me')}
                 >
                     Contact
                 </NavLink>
