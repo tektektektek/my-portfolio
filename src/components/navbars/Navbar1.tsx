@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import classNames from 'classnames';
 
@@ -22,38 +22,33 @@ type Navbar1Props = {
 
 const Navbar1 = ({ isSticky, navClass, buttonClass, fixedWidth, hideSearch }: Navbar1Props) => {
     const [loggedInUser] = useUser();
+    const [navbarSticky, setNavbarSticky] = useState(false);
 
-    // on scroll add navbar class
     useEffect(() => {
-        const btnTop = document.getElementById('btn-back-to-top');
-        const navbar = document.getElementById('sticky');
-        window.addEventListener('scroll', (e) => {
-            e.preventDefault();
-            if (btnTop) {
-                if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
-                    btnTop.classList.add('show');
-                } else {
-                    btnTop.classList.remove('show');
-                }
+        const handleScroll = () => {
+            if (document.body.scrollTop >= 5 || document.documentElement.scrollTop >= 5) {
+                setNavbarSticky(true);
+            } else {
+                setNavbarSticky(false);
             }
-            if (navbar) {
-                if (document.body.scrollTop >= 240 || document.documentElement.scrollTop >= 240) {
-                    navbar.classList.add('navbar-sticky');
-                } else {
-                    navbar.classList.remove('navbar-sticky');
-                }
-            }
-        });
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
     }, []);
 
     return (
         <header>
+            <div style={{ height: '70px' }}></div> {/* Conteneur "fantôme" pour prendre l'espace de la navbar */}
             <Navbar
                 id={isSticky ? 'sticky' : ''}
                 collapseOnSelect
                 expand="lg"
-                className={classNames('topnav-menu', navClass)}
-            >
+                className={classNames('topnav-menu navbar-sticky', { 'navbar-shrink': navbarSticky, 'navbar-bg-white': navbarSticky }, navClass)}
+                >
                 <Container fluid={!fixedWidth}>
                     <Navbar.Brand href="/" className="logo">
                         <img src={logo} height="30" className="align-top logo-dark" alt="" />

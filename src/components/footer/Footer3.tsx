@@ -9,7 +9,7 @@ const Footer3 = () => {
                     <Col>
                         <ul className="list-inline list-with-separator mb-0">
                             <li className="list-inline-item me-0">
-                                <Link to="#">About</Link>
+                                <Link to="#pricing-section">About</Link>
                             </li>
                             <li className="list-inline-item me-0">
                                 <Link to="#">Privacy</Link>

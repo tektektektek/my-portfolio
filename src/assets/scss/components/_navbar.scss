@@ -48,13 +48,35 @@
     }
     &.navbar-sticky {
         transition: $transition-base;
-        box-shadow: $box-shadow;
-        background: $white;
+        // box-shadow: $box-shadow;
+        // background: $white;
         z-index: 100000;
         position: fixed;
         width: 100%;
         top: 0;
     }
+    &.navbar-shrink {   
+        height: 70px;  // Nouvelle hauteur lorsque la navbar devient "sticky"
+        transition: $transition-base;
+
+        .navbar-nav {
+            & > .nav-item {
+                > .nav-link {
+                    line-height: 50px;  // Assurez-vous que cela correspond à la nouvelle hauteur
+                    max-height: 50px;  // Assurez-vous que cela correspond à la nouvelle hauteur
+                }
+            }
+        }
+    }
+    &.navbar-sticky.adding,
+    &.navbar-sticky.removing {
+        transition: none;
+    }  
+    &.navbar-bg-white {
+        background: $white !important;
+        box-shadow: $box-shadow;
+    } 
+
 }
 .navbar-light {
     .logo {
@@ -222,7 +244,7 @@
 
 @include media-breakpoint-down(lg) {
     .navbar.topnav-menu {
-        background-color: $white;
+        // background-color: $white;
         padding: 8px 0;
         height: auto;
         position: fixed;
