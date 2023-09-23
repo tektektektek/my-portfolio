@@ -6,7 +6,7 @@ import portfolio1 from 'assets/images/hero/portfolio1.png';
 
 const Hero3 = () => {
     return (
-        <section className="hero-3 pt-7 position-relative hero-with-shapes">
+        <section className="hero-3 pt-lg-7 pt-3 position-relative hero-with-shapes">
             <div className="shape1"></div>
             <div className="shape2"></div>
             <div className="shape3"></div>

@@ -137,7 +137,7 @@ $value in $theme-colors {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
-    display: none;
+    // display: none;
     z-index: 10;
 
     &.show {

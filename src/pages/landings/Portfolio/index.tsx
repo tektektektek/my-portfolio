@@ -19,11 +19,21 @@ import { projects, services } from './data';
 import { plans } from '../../other/Pricing/data';
 import { benefits} from '../../other/Career/data';
 
+// Fonction pour gérer le défilement doux
+const handleScrollToElement = (elementId: string) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+        element.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+};
+
 const Portfolio = () => {
     return (
         <>
             {/* header and hero */}
-            <div className="header-6">
+            <div id='home-back' className="header-6">
                 <Navbar1 navClass="navbar-light" fixedWidth hideSearch buttonClass="btn-outline-secondary btn-sm" />
                 <Hero3 />
             </div>

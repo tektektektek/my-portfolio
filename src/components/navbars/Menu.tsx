@@ -1,5 +1,5 @@
 import { Nav, Dropdown, Row, Col } from 'react-bootstrap';
-import { NavLink, Link, useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import FeatherIcon from 'feather-icons-react';
 import classNames from 'classnames';
 
@@ -14,9 +14,10 @@ type MenuProps = {
 const handleScrollToElement = (elementId: string) => {
     const element = document.getElementById(elementId);
     if (element) {
-        element.scrollIntoView({
-            behavior: 'smooth'
-        });
+        const yOffset = -70; // Décalage pour compenser la hauteur de la barre de navigation
+        const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+        window.scrollTo({ top: y, behavior: 'smooth' });
     }
 };
 
@@ -33,7 +34,9 @@ const Menu = ({ navClass, buttonClass, showDownload, loggedInUser }: MenuProps) 
     return (
         <Nav as="ul" className={classNames('align-items-lg-center', navClass)}>
             <Nav.Item as="li">
-                <NavLink to="/home" end className={classNames('nav-link', ({ ...isActive }) => isActive && 'active')}>
+                <NavLink to="#home-back" end className={classNames('nav-link', ({ ...isActive }) => isActive && 'active')}
+                onClick={() => handleScrollToElement('home-back')}
+                >
                     Home
                 </NavLink>
             </Nav.Item>
