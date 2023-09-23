@@ -1,56 +1,47 @@
 // types
-import { Slide, Slide1 } from './types';
+import { Slide } from './types';
 
 // images
-import Avatar1 from '../../assets/images/avatars/img-8.jpg';
-import Avatar2 from '../../assets/images/avatars/img-5.jpg';
+import Avatar1 from '../../assets/images/avatars/avis-1.jpg';
+import Avatar2 from '../../assets/images/avatars/avis-2.png';
+import Avatar3 from '../../assets/images/avatars/avis-3.png';
 import Amazon from '../../assets/images/brands/amazon.svg';
 import Google from '../../assets/images/brands/google.svg';
 
-import saas1 from '../../assets/images/hero/saas1.jpg';
-import saas2 from '../../assets/images/hero/saas2.jpg';
-import saas3 from '../../assets/images/hero/saas3.jpg';
 
 const slides: Slide[] = [
     {
         statement:
-            ' This app is a truly blessing for all professionals! A day to day project management was never easy for me.But with prompt, I can manage more than 100 projects easily.',
+            ' Working with Amoni has been an exceptional experience. His technical acumen, swift problem-solving abilities, and collaborative approach have been instrumental in the successful realization of my project.',
         customer: {
             avatar: Avatar1,
-            name: 'Cersei Lannister',
-            designation: 'Senior Project Manager',
+            name: 'Ahmadou GUEYE',
+            designation: 'SEO WavesBrush',
         },
-        logo: Amazon,
+        // logo: Amazon,
     },
     {
         statement:
-            'It is one of the very convenient to use project manager ever! I have tried many project management apps for my daily tasks, but this one is far better than others.Simply loved it!',
+            "Collaborating with Amoni was nothing short of genuinely transformative. His unparalleled communication skills and empathetic understanding of client needs not only met but indeed exceeded our project's ambitious objectives.",
         customer: {
             avatar: Avatar2,
-            name: 'John Stark',
-            designation: 'Engineering Director',
+            name: 'Ilhan GHERMI',
+            designation: 'SEO ',
         },
-        logo: Google,
+        // logo: Google,
+    },
+    {
+        statement:
+            'Engaging with Amoni was a game-changer for our initiative. His strategic insight, coupled with his remarkable ability to forge meaningful relationships, has been pivotal in elevating our project to new heights.',
+        customer: {
+            avatar: Avatar3,
+            name: 'Ibrahim TOURE',
+            designation: 'SEO Fraichissime',
+        },
+        // logo: Google,
     },
 ];
 
-const slides1: Slide1[] = [
-    {
-        image: saas1,
-        slideTitle: 'Manage your saas business with ease',
-        description:
-            'Make your saas application stand out with high-quality landing page designed and developed by professional.',
-    },
-    {
-        image: saas2,
-        slideTitle: 'The best way to showcase your mobile app',
-        description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.',
-    },
-    {
-        image: saas3,
-        slideTitle: 'Smart Solution that convert Lead to Customer',
-        description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.',
-    },
-];
 
-export { slides, slides1 };
+
+export { slides };

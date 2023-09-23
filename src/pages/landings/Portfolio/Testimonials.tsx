@@ -34,7 +34,7 @@ const Testimonials = () => {
                 <Row className="mt-3 mt-sm-5">
                     <Col>
                         <div className="slider">
-                            <SwiperSlider2 slides={slides} hasLogo />
+                            <SwiperSlider2 slides={slides} /*hasLogo */ />
                         </div>
                     </Col>
                 </Row>
