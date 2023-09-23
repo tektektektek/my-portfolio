@@ -22,8 +22,7 @@ const Footer = () => {
                             </li>
                         </ul>
                         <p className="mt-2">
-                            {new Date().getFullYear()}© Prompt. All rights reserved. Crafted by
-                            <a href="https://coderthemes.com/">Coderthemes</a>
+                            {new Date().getFullYear()}© Amoni. All rights reserved.
                         </p>
                     </Col>
                 </Row>

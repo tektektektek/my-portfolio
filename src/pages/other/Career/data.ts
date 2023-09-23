@@ -1,107 +1,38 @@
 // types
-import { Benefit, GalleryItem, Vacancy } from './types';
-
-// images
-import img1 from 'assets/images/photos/3.jpg';
-import img2 from 'assets/images/photos/4.jpg';
-import img3 from 'assets/images/photos/5.jpg';
-import img4 from 'assets/images/photos/10.jpg';
+import { Benefit} from './types';
 
 const benefits: Benefit[] = [
     {
-        icon: 'compass',
-        title: 'Relocation Support',
-        description: "We'll help to move and get settled and handle the visa process for you",
+        icon: 'layout',
+        title: 'Proven Expertise',
+        description: "Benefit from advanced web design backed by years of experience and technological mastery.",
     },
     {
-        icon: 'server',
-        title: 'Technology',
-        description: 'A special training to get start with our technical stack by professionals',
+        icon: 'check-circle',
+        title: 'Industry-Specific Adaptability',
+        description: 'Tailored solutions to suit a variety of business sectors, ensuring optimal visibility and efficacy.',
     },
     {
-        icon: 'dollar-sign',
-        title: 'Growth budget',
-        description: 'A specific budget for your professionals growth which you spend on throughout the year',
+        icon: 'shield',
+        title: 'Unparalleled Security',
+        description: 'Implementation of stringent security practices for comprehensive protection of your website.',
     },
     {
         icon: 'users',
-        title: 'Team activities & retreats',
-        description: "Many team building activities and retreat every quarter, so you don't get bored",
+        title: 'Advanced SEO Optimization',
+        description: "Integration of advanced SEO strategies to maximize site visibility and drive qualified traffic.",
     },
     {
-        icon: 'map-pin',
-        title: 'Work from anywhere',
-        description: 'Work from anywhere you like. We offer remote working to all the employees',
+        icon: 'phone-call',
+        title: 'Dedicated Technical Support',
+        description: 'Access to rapid and proficient support, ensuring timely resolution of any and all issues.',
     },
     {
-        icon: 'coffee',
-        title: 'Work/life balance',
-        description: 'Flexible work hours gives you complete balance with your personal and professional life.',
+        icon: 'thumbs-up',
+        title: 'Sustainable Investment',
+        description: 'Comprehensive service from design to maintenance ensures a sustainable, profitable investment.',
     },
 ];
 
-const gallery: GalleryItem[] = [
-    {
-        id: 3,
-        image: {
-            src: img1,
-            caption: 'Office Desks',
-        },
-    },
-    {
-        id: 4,
-        image: {
-            src: img2,
-            caption: 'Meeting Room view',
-        },
-    },
-    {
-        id: 5,
-        image: {
-            src: img4,
-            caption: 'Outside view',
-        },
-    },
-    {
-        id: 6,
-        image: {
-            src: img3,
-            caption: 'A common seating area',
-        },
-    },
-];
 
-const vacancies: Vacancy[] = [
-    {
-        category: 'Engineering',
-        jobs: [
-            {
-                designation: 'Techical Support Engineer',
-                type: 'Remote',
-            },
-            {
-                designation: 'Senior Software Engineer (Frontend)',
-                type: 'Remote',
-            },
-            {
-                designation: 'Senior Software Engineer (Backend)',
-                type: 'Remote',
-            },
-            {
-                designation: 'Engineering Manager',
-                type: 'Remote',
-            },
-        ],
-    },
-    {
-        category: 'Marketing',
-        jobs: [
-            {
-                designation: 'Junior copywriter/editor',
-                type: 'Remote',
-            },
-        ],
-    },
-];
-
-export { benefits, gallery, vacancies };
+export { benefits};

@@ -6,11 +6,10 @@ import { Footer1 } from '../../../components/footer';
 import Hero from './Hero';
 import Benefits from './Benefits';
 import Culture from './Culture';
-import Vacancies from './Vacancies';
 import CTA from './CTA';
 
 // dummy data
-import { benefits, gallery, vacancies } from './data';
+import { benefits } from './data';
 
 const Career = () => {
     return (
@@ -28,12 +27,6 @@ const Career = () => {
 
             {/* benefits */}
             <Benefits benefits={benefits} />
-
-            {/* culture */}
-            <Culture gallery={gallery} />
-
-            {/* Job */}
-            <Vacancies vacancies={vacancies} />
 
             {/* cta */}
             <CTA />

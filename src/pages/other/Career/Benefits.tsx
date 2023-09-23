@@ -17,8 +17,8 @@ const Benefits = ({ benefits }: BenefitsProps) => {
                         <Badge pill bg="" className="badge-soft-info px-2 py-1">
                             Benefits
                         </Badge>
-                        <h1 className="display-5 fw-semibold">We take care of our team</h1>
-                        <p className="text-muted mx-auto">Few benefits from working together</p>
+                        <h1 className="display-5 fw-semibold">I take care of our clients</h1>
+                        <p className="text-muted mx-auto">Benefits from working together</p>
                     </Col>
                 </Row>
                 <Row>
