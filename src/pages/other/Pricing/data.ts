@@ -20,7 +20,8 @@ const plans: PlanItem[] = [
         id: 2,
         name: 'Professional Website',
         duration: 'starting from',
-        price: '3000',
+        price: '300',
+        duration2:'/ day',
         features: [
             'Customized Solutions',
             'Advanced SEO',
@@ -35,7 +36,8 @@ const plans: PlanItem[] = [
         id: 3,
         name: 'Enterprise Website',
         duration: 'starting from',
-        price: '5000',
+        price: '500',
+        duration2:'/ day',
         features: [
             'Scalable Architecture',
             'Enhanced Security',

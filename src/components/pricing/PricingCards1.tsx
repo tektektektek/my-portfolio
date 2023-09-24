@@ -35,6 +35,7 @@ const PricingCards1 = ({ plans, containerClass, hasAnimation }: PricingCardProps
                                     <span className="fw-normal text-muted fs-13 align-middle">{plan.duration} <br /></span>
                                     <span className="fw-bolder display-5">{plan.price}</span>
                                     <span className="fw-normal text-muted fs-13 align-top">€</span>
+                                    <span className="fw-normal text-muted fs-13 align-middle">{plan.duration2} <br /></span>
                                 </h1>
                                 <ul className="list-unstyled border-top py-4 mt-4 text-start">
                                     {plan.features.map((feature, index) => {
