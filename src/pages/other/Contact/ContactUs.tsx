@@ -96,7 +96,7 @@ const ContactUs = () => {
                                             />
                                         </Col>
                                         <Col lg="auto" className="mb-0">
-                                            <Button type="submit">
+                                            <Button type="submit" className="btn-info">
                                                 Send
                                                 <span className="icon icon-xs text-white ms-1">
                                                     <FeatherIcon icon="send" />
@@ -124,7 +124,7 @@ const ContactUs = () => {
                             </span>
                             <div className="flex-grow-1">
                                 <h5 className="m-0 fw-medium">Email</h5>
-                                <Link to="#" className="text-muted fw-normal h5 my-1">
+                                <Link to="mailto:mail@amoni.me" className="text-muted fw-normal h5 my-1">
                                     mail@amoni.me
                                 </Link>
                             </div>
