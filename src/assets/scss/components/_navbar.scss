@@ -251,6 +251,8 @@
         left: 0;
         right: 0;
         z-index: 1001;
+        background: $white;
+        box-shadow: $box-shadow;
         .dropdown {
             .dropdown-menu {
                 &.dropdown-menu-lg {
