@@ -4,6 +4,15 @@ import { Col, Container, Row } from 'react-bootstrap';
 // images
 import portfolio1 from 'assets/images/hero/portfolio1.png';
 
+const handleScrollToElement = (elementId: string) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      const yOffset = -70;
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  };
+
 const Hero3 = () => {
     return (
         <section className="hero-3 pt-lg-7 pt-3 position-relative hero-with-shapes">
@@ -23,10 +32,12 @@ const Hero3 = () => {
                         </p>
 
                         <div className="pt-3 pt-sm-5">
-                            <Link to="#contact-me-form" className="btn btn-danger" data-toggle="smooth-scroll">
+                            <Link to="#contact-me" className="btn btn-info" data-toggle="smooth-scroll"
+                            onClick={() => handleScrollToElement('contact-me')}  // Ajoutez cette ligne
+                            >
                                 Contact me
                             </Link>
-                            <Link to="#" className="btn btn-outline-danger ms-2">
+                            <Link to="#" className="btn btn-outline-secondary ms-2">
                                 Download CV
                             </Link>
                         </div>

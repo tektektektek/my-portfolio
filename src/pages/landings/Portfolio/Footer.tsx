@@ -1,13 +1,15 @@
 import { Col, Container, Row } from 'react-bootstrap';
 // import { Link } from 'react-router-dom';
 
-// Fonction pour gérer le défilement doux
 const handleScrollToElement = (elementId: string) => {
     const element = document.getElementById(elementId);
     if (element) {
-        element.scrollIntoView({
-            behavior: 'smooth'
-        });
+        // Utilisation de setTimeout pour s'assurer que le défilement se passe après que tout soit chargé
+        setTimeout(() => {
+            const yOffset = -70; // Décalage pour compenser la hauteur de la barre de navigation
+            const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+        }, 100); // 100 ms de délai, ajustez comme nécessaire
     }
 };
 
