@@ -1,21 +1,54 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react'; // N'oubliez pas d'importer useEffect
 import { Nav } from 'react-bootstrap';
 import classNames from 'classnames';
 
-const handleScrollToElement = (elementId: string) => {
-  const element = document.getElementById(elementId);
-  if (element) {
-    const yOffset = -70;
-    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    window.scrollTo({ top: y, behavior: 'smooth' });
-  }
+type MenuProps = {
+  navClass?: string;
+  buttonClass?: string;
+  showDownload?: boolean;
 };
 
-const Menu = ({ navClass, buttonClass, showDownload }: any) => {
-  const [activeSection, setActiveSection] = useState<string | null>(null);
+const Menu: React.FC<MenuProps> = ({ navClass, buttonClass, showDownload }) => {
+  const [activeSection, setActiveSection] = useState<string | null>('home-back'); // Initialisé à 'home-back'
 
-  const handleClick = (section: string) => {
-    handleScrollToElement(section);
+useEffect(() => {
+  const handleScroll = () => {
+    const sections = ['home-back', 'pricing-section', 'about-me', 'portfolio-grid', 'contact-me'];
+    for (const section of sections) {
+      const element = document.getElementById(section);
+      const navbarHeight = 70;
+      let offset = 0;
+
+      // Appliquer un décalage spécifique à la section "Contact"
+      if (section === 'contact-me') {
+        offset = 480;
+      }
+
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        if (rect.top <= (navbarHeight + offset) && rect.bottom > (navbarHeight + offset)) {
+          setActiveSection(section);
+          break;
+        }
+      }
+    }
+  };
+
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleClick = (section: string) => { // Ajout de types
+    const element = document.getElementById(section);
+    if (element) {
+      const yOffset = -70;
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
     setActiveSection(section);
   };
 

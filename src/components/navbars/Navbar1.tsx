@@ -77,7 +77,7 @@ const Navbar1 = ({ isSticky, navClass, buttonClass, fixedWidth, hideSearch }: Na
                         )}
                         <Menu
                             showDownload
-                            loggedInUser={loggedInUser}
+                            // loggedInUser={loggedInUser}
                             navClass="ms-auto"
                             buttonClass={buttonClass ? buttonClass : 'btn-primary'}
                         />
