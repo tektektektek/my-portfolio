@@ -9,7 +9,7 @@ import { useUser } from '../../hooks/auth';
 import Menu from './Menu';
 
 // images
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/logo2.png';
 import logoLight from '../../assets/images/logo-light.png';
 
 type Navbar1Props = {
