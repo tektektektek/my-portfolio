@@ -6,7 +6,7 @@ const plans: PlanItem[] = [
         id: 1,
         name: 'Starter Website',
         duration: 'starting from',
-        price: '1500',
+        price: '1200',
         features: [
             'Budget Optimization',
             'Online Presence',

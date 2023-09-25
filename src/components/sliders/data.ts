@@ -16,7 +16,7 @@ const slides: Slide[] = [
         customer: {
             avatar: Avatar1,
             name: 'Ahmadou GUEYE',
-            designation: 'SEO WavesBrush',
+            designation: 'SEO BambaWaves',
         },
         // logo: Amazon,
     },
@@ -26,7 +26,7 @@ const slides: Slide[] = [
         customer: {
             avatar: Avatar2,
             name: 'Ilhan GHERMI',
-            designation: 'SEO ',
+            designation: 'SEO IntegralForma ',
         },
         // logo: Google,
     },
