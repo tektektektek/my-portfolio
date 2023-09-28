@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'; // N'oubliez pas d'importer useEffect
 import { Nav } from 'react-bootstrap';
 import classNames from 'classnames';
+import { useTranslation } from 'react-i18next';
+
 
 type MenuProps = {
   navClass?: string;
@@ -52,6 +54,8 @@ useEffect(() => {
     setActiveSection(section);
   };
 
+  const { t } = useTranslation();
+
   return (
     <Nav as="ul" className={classNames('align-items-lg-center', navClass)}>
       <Nav.Item as="li">
@@ -60,7 +64,7 @@ useEffect(() => {
           className={classNames('nav-link', { active: activeSection === 'home-back' })}
           onClick={(e) => { e.preventDefault(); handleClick('home-back'); }}
         >
-          Home
+          {t('menu.home')}
         </a>
       </Nav.Item>
       <Nav.Item as="li">
@@ -69,7 +73,7 @@ useEffect(() => {
           className={classNames('nav-link', { active: activeSection === 'pricing-section' })}
           onClick={(e) => { e.preventDefault(); handleClick('pricing-section'); }}
         >
-          Pricing
+          {t('menu.pricing')}
         </a>
       </Nav.Item>
       <Nav.Item as="li">
@@ -78,7 +82,7 @@ useEffect(() => {
           className={classNames('nav-link', { active: activeSection === 'about-me' })}
           onClick={(e) => { e.preventDefault(); handleClick('about-me'); }}
         >
-          About Me
+          {t('menu.aboutMe')}
         </a>
       </Nav.Item>
       <Nav.Item as="li">
@@ -87,7 +91,7 @@ useEffect(() => {
           className={classNames('nav-link', { active: activeSection === 'portfolio-grid' })}
           onClick={(e) => { e.preventDefault(); handleClick('portfolio-grid'); }}
         >
-          Portfolio Grid
+          {t('menu.portfolioGrid')}
         </a>
       </Nav.Item>
       <Nav.Item as="li">
@@ -96,7 +100,7 @@ useEffect(() => {
           className={classNames('nav-link', { active: activeSection === 'contact-me' })}
           onClick={(e) => { e.preventDefault(); handleClick('contact-me'); }}
         >
-          Contact
+          {t('menu.contact')}
         </a>
       </Nav.Item>
       {showDownload && (
@@ -106,7 +110,7 @@ useEffect(() => {
             download="DOGBE-CV.pdf"
             className={classNames('btn', buttonClass)}
           >
-            Download CV
+            {t('menu.downloadCV')}
           </a>
         </Nav.Item>
       )}

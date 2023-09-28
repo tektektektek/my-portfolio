@@ -1,0 +1,66 @@
+{
+    "hero3": {
+        "greeting": "Hello! I am Amoni D.",
+        "title": "I'm a freelance Web Developer.",
+        "description": "I'm a web Developer with a passion for creating unique and effective experiences for my customers. My goal is to meet the specific needs of each project and help my clients define their digital identity.",
+        "contactButton": "Contact me",
+        "downloadButton": "Download CV"
+    },
+    "menu": {
+        "home": "Home",
+        "pricing": "Pricing",
+        "aboutMe": "About Me",
+        "portfolioGrid": "Portfolio Grid",
+        "contact": "Contact",
+        "downloadCV": "Download CV"
+    },
+    "services": {
+        "descriptionPart1": "While primarily esteemed for my expertise in web development, I also offer refined skills in graphic design and video editing, though these ",
+        "descriptionPart2": "remain supplementary to my main specialization",
+        "title":"What I Do",
+
+        "website": {
+            "title": "Website",
+            "description": "As an expert in web development, I design digital solutions that combine aesthetics and performance to catalyze the success of your business."
+        },
+        "graphicDesign": {
+            "title": "Graphic Design",
+            "description": "Endowed with supplementary skills in graphic design, I create striking visuals that enhance and complement my primary web development projects."
+        },
+        "videoEditor": {
+            "title": "Video Editor",
+            "description": "While my core expertise lies in web development, I also possess skills in video editing, allowing me to produce enriching multimedia content."
+        }
+    },
+    "pricing": {
+        "plansBadge": "Plans",
+        "plansTitle": "Pricing Plans",
+        "plansDescriptionPart1": " Pricing that ",
+        "plansDescriptionPart2": "works ",
+        "plansDescriptionPart3": "for everyone.",
+
+        "starterWebsiteName": "Starter Website",
+        "basicWebsiteName": "Professional Website",
+        "premiumWebsiteName": "Enterprise Website",
+        "startingFrom": "starting from",
+        "feature1": "Budget Optimization",
+        "feature2": "Online Presence",
+        "feature3": "Responsive Design",
+        "feature4": "Quick Implementation",
+        "feature5": "Email-based Technical Support",
+        "feature6": "Customized Solutions",
+        "feature7": "Advanced SEO",
+        "feature8": "Performance Analytics",
+        "feature9": "Secure Authentication",
+        "feature10": "Priority Technical Support",
+        "feature11": "Scalable Architecture",
+        "feature12": "Enhanced Security",
+        "feature13": "API Integrations",
+        "feature14": "Advanced SEO",
+        "feature15": "And much more",
+        "feature16": "starting from",
+        "feature17": "day"
+    }
+
+}
+

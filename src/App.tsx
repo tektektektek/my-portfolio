@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { Suspense, useEffect } from 'react';
 
 import AOS from 'aos';
 
@@ -18,7 +18,11 @@ const App = () => {
     }, []);
 
     configureFakeBackend();
-    return <Routes />;
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <Routes />
+        </Suspense>
+    );
 };
 
 export default App;

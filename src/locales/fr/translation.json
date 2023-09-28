@@ -1,0 +1,66 @@
+{
+    "hero3": {
+        "greeting": "Bonjour! Je suis Amoni D.",
+        "title": "Je suis un Développeur web freelance.",
+        "description": "Je suis un Développeur web passionné par la création d'expériences uniques et efficaces pour mes clients. Mon objectif est de répondre aux besoins spécifiques de chaque projet et d'aider mes clients à définir leur identité numérique.",
+        "contactButton": "Contactez-moi",
+        "downloadButton": "Télécharger le CV"
+    },
+    "menu": {
+        "home": "Accueil",
+        "pricing": "Tarifs",
+        "aboutMe": "À propos",
+        "portfolioGrid": "Projets",
+        "contact": "Contact",
+        "downloadCV": "Télécharger le CV"
+    },
+    "services": {
+        "descriptionPart1": "Tout en étant principalement reconnu pour mon expertise en développement web, j'offre également des compétences raffinées en design graphique et en montage vidéo, bien que celles-ci ",
+        "descriptionPart2": "restent complémentaires à ma spécialisation principale",
+        "title": "Services",
+
+        "website": {
+            "title": "Site Web",
+            "description": "En tant qu'expert en développement web, je conçois des solutions numériques alliant esthétique et performance pour catalyser le succès de votre entreprise."
+        },
+        "graphicDesign": {
+            "title": "Design graphique",
+            "description": "Doté de compétences complémentaires en design graphique, je crée des visuels saisissants qui améliorent et complètent mes principaux projets de développement web."
+        },
+        "videoEditor": {
+            "title": "Monteur vidéo",
+            "description": "Bien que mon expertise principale réside dans le développement web, je possède également des compétences en montage vidéo, ce qui me permet de produire un contenu multimédia enrichissant."
+        }
+    },
+    "pricing": {
+        "plansBadge": "Forfaits",
+        "plansTitle": "Forfaits Tarifaires",
+        "plansDescriptionPart1": "Des tarifs ",
+        "plansDescriptionPart2": "qui conviennent ",
+        "plansDescriptionPart3": "à tout le monde.",
+
+        "starterWebsiteName": "Site Web de Démarrage",
+        "basicWebsiteName": "Site Web Professionnel",
+        "premiumWebsiteName": "Site Web d'Entreprise",
+        "startingFrom": "à partir de",
+        "feature1": "Optimisation du budget",
+        "feature2": "Présence en ligne",
+        "feature3": "Design adaptatif",
+        "feature4": "Mise en œuvre rapide",
+        "feature5": "Assistance technique par e-mail",
+        "feature6": "Solutions personnalisées",
+        "feature7": "SEO avancé",
+        "feature8": "Analyse de performance",
+        "feature9": "Authentification sécurisée",
+        "feature10": "Assistance technique prioritaire",
+        "feature11": "Architecture évolutive",
+        "feature12": "Sécurité renforcée",
+        "feature13": "Intégrations d'API",
+        "feature14": "SEO avancé",
+        "feature15": "Et bien plus encore",
+        "feature16": "à partir de",
+        "feature17": "jour"
+    }
+
+    
+}

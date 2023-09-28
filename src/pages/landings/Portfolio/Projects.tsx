@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Autoplay, Navigation, Pagination } from 'swiper';
 
 // types
-import { Project } from './types';
+import { Project} from './types';
 
 // Initialize Swiper plugins
 SwiperCore.use([Pagination, Autoplay, Navigation]);
@@ -13,6 +13,7 @@ SwiperCore.use([Pagination, Autoplay, Navigation]);
 type ProjectsProps = {
     projects: Project[];
 };
+
 const Projects = ({ projects }: ProjectsProps) => {
     return (
         <section id='portfolio-grid' className="pt-6 pb-3 position-relative">

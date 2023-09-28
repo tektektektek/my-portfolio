@@ -1,5 +1,7 @@
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import FeatherIcon from 'feather-icons-react';
+import { useTranslation } from 'react-i18next';
+
 
 // types
 import { Service } from './types';
@@ -9,15 +11,16 @@ type ServicesProps = {
 };
 
 const Services = ({ services }: ServicesProps) => {
+    const { t } = useTranslation();
     return (
         <section className="position-relative py-6">
             <Container>
                 <Row className="justify-content-center">
                     <Col className="text-start">
-                        <h1 className="display-5 fw-semibold">What I Do</h1>
+                        <h1 className="display-5 fw-semibold">{t("services.title")}</h1>
                         <p className="text-muted mx-auto">
-                            Connecting brands and companies with their customers through{' '}
-                            <span className="text-danger fw-medium">good design</span>.
+                        {t("services.descriptionPart1")} 
+                        <span className="text-danger fw-medium">{t("services.descriptionPart2")}</span>.
                         </p>
                     </Col>
                 </Row>
@@ -34,8 +37,8 @@ const Services = ({ services }: ServicesProps) => {
                                         <div className="bg-soft-danger avatar avatar-sm icon icon-with-bg icon-xs text-danger">
                                             <FeatherIcon icon={service.icon} claasName="icon-dual-danger" />
                                         </div>
-                                        <h4 className="mt-4 text-dark">{service.title}</h4>
-                                        <p className="text-muted mb-0">{service.description}</p>
+                                        <h4 className="mt-4 text-dark">{t(service.title)}</h4>
+                                        <p className="text-muted mb-0">{t(service.description)}</p>
                                     </Card.Body>
                                 </Card>
                             </Col>

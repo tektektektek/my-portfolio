@@ -1,5 +1,7 @@
 import { Badge, Col, Container, Row } from 'react-bootstrap';
 import FeatherIcon from 'feather-icons-react';
+import { useTranslation } from 'react-i18next';
+
 
 // types
 import { Benefit } from './types';
@@ -9,6 +11,8 @@ type BenefitsProps = {
 };
 
 const Benefits = ({ benefits }: BenefitsProps) => {
+    const { t } = useTranslation();
+
     return (
         <section className="py-3 mt-5 mb-6 career-service position-relative">
             <Container>
@@ -17,8 +21,8 @@ const Benefits = ({ benefits }: BenefitsProps) => {
                         <Badge pill bg="" className="badge-soft-info px-2 py-1">
                             Benefits
                         </Badge>
-                        <h1 className="display-5 fw-semibold">I take care of our clients</h1>
-                        <p className="text-muted mx-auto">Benefits from working together</p>
+                        <h1 className="display-5 fw-semibold">{t("benefits.title")}</h1>
+                        <p className="text-muted mx-auto">{t("benefits.joinTeam")}</p>
                     </Col>
                 </Row>
                 <Row>

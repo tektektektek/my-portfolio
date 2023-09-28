@@ -1,53 +1,53 @@
 // types
 import { PlanItem } from 'components/pricing';
+import i18n from 'i18next';
 
 const plans: PlanItem[] = [
     {
         id: 1,
-        name: 'Starter Website',
-        duration: 'starting from',
+        name: i18n.t("pricing.starterWebsiteName"),
+        duration: i18n.t("pricing.startingFrom"),
         price: '1200',
         features: [
-            'Budget Optimization',
-            'Online Presence',
-            'Responsive Design',
-            'Quick Implementation',
-            'Email-based Technical Support',
+            i18n.t("pricing.feature1"),
+            i18n.t("pricing.feature2"),
+            i18n.t("pricing.feature3"),
+            i18n.t("pricing.feature4"),
+            i18n.t("pricing.feature5"),
         ],
         isRecommended: false,
     },
     {
         id: 2,
-        name: 'Professional Website',
-        duration: 'starting from',
-        price: '300',
-        duration2:'/ day',
+        name: i18n.t("pricing.basicWebsiteName"),
+        duration: i18n.t("pricing.startingFrom") + ' ' + i18n.t("pricing.feature16"),
+        price: '320',
+        duration2:'/ ' + i18n.t("pricing.feature17"),
         features: [
-            'Customized Solutions',
-            'Advanced SEO',
-            'Performance Analytics',
-            'Secure Authentication',
-            'Priority Technical Support',
+            i18n.t("pricing.feature6"),
+            i18n.t("pricing.feature7"),
+            i18n.t("pricing.feature8"),
+            i18n.t("pricing.feature9"),
+            i18n.t("pricing.feature10"),
         ],
         isRecommended: true,
         isPopular: true,
     },
     {
         id: 3,
-        name: 'Enterprise Website',
-        duration: 'starting from',
+        name: i18n.t("pricing.premiumWebsiteName"),
+        duration: i18n.t("pricing.startingFrom") + ' ' + i18n.t("pricing.feature16"),
         price: '500',
-        duration2:'/ day',
+        duration2:'/ ' + i18n.t("pricing.feature17"),
         features: [
-            'Scalable Architecture',
-            'Enhanced Security',
-            'API Integrations',
-            'Advanced SEO',
-            'And much more',
+            i18n.t("pricing.feature11"),
+            i18n.t("pricing.feature12"),
+            i18n.t("pricing.feature14"),
+            i18n.t("pricing.feature7"),
+            i18n.t("pricing.feature15"),
         ],
         isRecommended: false,
     },
 ];
-
 
 export { plans };

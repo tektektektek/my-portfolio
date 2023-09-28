@@ -1,4 +1,7 @@
 import { Badge, Col, Container, Row } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
+
+
 
 // components
 import { PricingCards1, PlanItem } from 'components/pricing';
@@ -8,17 +11,18 @@ type PricingPlansProps = {
 };
 
 const PricingPlans = ({ plans }: PricingPlansProps) => {
+    const { t } = useTranslation();
     return (
         <section id='pricing-section' className="section py-3 position-relative">
             <Container>
                 <Row>
                     <Col className="text-center">
                         <Badge pill bg="" className="badge-soft-info px-2 py-1">
-                            Plans
+                        {t("pricing.plansBadge")}
                         </Badge>
-                        <h1 className="display-5 fw-semibold">Pricing Plans</h1>
+                        <h1 className="display-5 fw-semibold">{t("pricing.plansTitle")}</h1>
                         <p className="text-muted mx-auto">
-                            Pricing that <span className="text-info fw-bold">works</span> for everyone.
+                        {t("pricing.plansDescriptionPart1")} {t("pricing.plansDescriptionPart2")} <span className="text-info fw-bold">{t("pricing.plansDescriptionPart3")}</span> 
                         </p>
                     </Col>
                 </Row>
