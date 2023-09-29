@@ -3,7 +3,6 @@
 //
 
 
-
 .btn {
     .icon {
         svg {
@@ -56,14 +55,14 @@
 
     &:hover {
         color: $link-hover-color;
-        text-decoration: $link-hover-decoration;
+        text-decoration: none;
         background-color: transparent;
         border-color: transparent;
     }
 
     &:focus,
     &.focus {
-        text-decoration: $link-hover-decoration;
+        text-decoration: none;
         border-color: transparent;
         box-shadow: none;
     }

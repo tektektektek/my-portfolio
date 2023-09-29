@@ -18,8 +18,8 @@ const LanguageSwitcher: React.FC = () => {
 
   return (
     <Dropdown>
-      <Dropdown.Toggle variant="link">
-        {i18n.language === 'en' ? '🇺🇸' : '🇫🇷'}
+      <Dropdown.Toggle variant="link" className="no-outline">
+        {i18n.language === 'en' ? '🇺🇸 EN' : '🇫🇷 FR'}
       </Dropdown.Toggle>
       <Dropdown.Menu>
         <Dropdown.Item onClick={() => changeLanguage('en')}>🇺🇸 English</Dropdown.Item>
