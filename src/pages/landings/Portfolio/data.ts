@@ -1,6 +1,5 @@
 // types
 import { Project, Service } from './types';
-import i18n from 'i18next';
 
 
 import ProjectImg1 from 'assets/images/features/agency1.jpg';
@@ -29,18 +28,18 @@ const services: Service[] = [
 
 const projects: Project[] = [
     {
-        title: i18n.t('projects.project1.title'),
-        description: i18n.t('projects.project1.description'),
+        title: 'projects.project1.title',
+        description: 'projects.project1.description',
         image: ProjectImg1,
     },
     {
-        title: i18n.t('projects.project2.title'),
-        description: i18n.t('projects.project2.description'),
+        title: 'projects.project2.title',
+        description: 'projects.project2.description',
         image: ProjectImg2,
     },
     {
-        title: i18n.t('projects.project3.title'),
-        description: i18n.t('projects.project3.description'),
+        title: 'projects.project3.title',
+        description: 'projects.project3.description',
         image: ProjectImg3,
     },
 ];

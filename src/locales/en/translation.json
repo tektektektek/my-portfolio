@@ -20,7 +20,7 @@
         "title":"What I Do",
 
         "website": {
-            "title": "Website",
+            "title": "Frontend Development",
             "description": "As an expert in web development, I design digital solutions that combine aesthetics and performance to catalyze the success of your business."
         },
         "graphicDesign": {
@@ -59,7 +59,9 @@
         "feature14": "Advanced SEO",
         "feature15": "And much more",
         "feature16": "starting from",
-        "feature17": "day"
+        "feature17": "/ day",
+        "popularLabel": "Popular",
+        "contactMeLabel": "Contact Me"
     },
     "benefits": {
         "badge":"Bénéfits",
@@ -115,7 +117,58 @@
             "title": "Cosmet",
             "description": "Cosmetics website project."
         }
-    }
+    },
+    "testimonial": {
+        "title": "Kind words from excellent clients"
+    },
+    "slides": {
+        "slide1": {
+            "statement": "Working with Amoni has been an exceptional experience. His technical acumen, swift problem-solving abilities, and collaborative approach have been instrumental in the successful realization of my project.",
+            "customerName": "Ahmadou GUEYE",
+            "designation": "SEO BambaWaves"
+        },
+        "slide2": {
+            "statement": "Collaborating with Amoni was nothing short of genuinely transformative. His unparalleled communication skills and empathetic understanding of client needs not only met but indeed exceeded our project's ambitious objectives.",
+            "customerName": "Ilhan GHERMI",
+            "designation": "SEO IntegralForma"
+        },
+        "slide3": {
+            "statement": "Engaging with Amoni was a game-changer for our initiative. His strategic insight, coupled with his remarkable ability to forge meaningful relationships, has been pivotal in elevating our project to new heights.",
+            "customerName": "Ibrahim TOURE",
+            "designation": "SEO Fraichissime"
+        }
+    },
+    "contact": {
+        "title": "Let's Talk Further",
+        "description": "Please fill out the following form and we will get back to you shortly",
+        "form": {
+            "fname": "First Name",
+            "fnameRequired": "Please enter first name",
+            "fnamePlaceholder": "Your First Name",
+            "lname": "Last Name",
+            "lnameRequired": "Please enter last name",
+            "lnamePlaceholder": "Your Last Name",
+            "email": "Email Name",
+            "emailRequired": "Please enter Email",
+            "emailInvalid": "Please enter valid Email",
+            "emailPlaceholder": "Your Email",
+            "message": "Message",
+            "messageRequired": "Please enter Message",
+            "messagePlaceholder": "Type Your message...",
+            "sendButton": "Send"
+        },
+        "email": "Email",
+        "phone": "Phone",
+        "address": "Address"
+    },
+    "footer": {
+        "home": "Home",
+        "pricing": "Pricing",
+        "aboutMe": "About Me",
+        "portfolio": "Projets",
+        "contact": "Contact",
+        "copyright": "Amoni. All rights reserved."
+      }
 
 }
 

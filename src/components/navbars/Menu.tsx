@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react'; // N'oubliez pas d'importer useEffect
-import { Nav } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
+import { Nav, Dropdown } from 'react-bootstrap';
 import classNames from 'classnames';
 import { useTranslation } from 'react-i18next';
-
 
 type MenuProps = {
   navClass?: string;
@@ -10,41 +9,59 @@ type MenuProps = {
   showDownload?: boolean;
 };
 
-const Menu: React.FC<MenuProps> = ({ navClass, buttonClass, showDownload }) => {
-  const [activeSection, setActiveSection] = useState<string | null>('home-back'); // Initialisé à 'home-back'
+const LanguageSwitcher: React.FC = () => {
+  const { i18n } = useTranslation();
 
-useEffect(() => {
-  const handleScroll = () => {
-    const sections = ['home-back', 'pricing-section', 'about-me', 'portfolio-grid', 'contact-me'];
-    for (const section of sections) {
-      const element = document.getElementById(section);
-      const navbarHeight = 70;
-      let offset = 0;
-
-      // Appliquer un décalage spécifique à la section "Contact"
-      if (section === 'contact-me') {
-        offset = 480;
-      }
-
-      if (element) {
-        const rect = element.getBoundingClientRect();
-        if (rect.top <= (navbarHeight + offset) && rect.bottom > (navbarHeight + offset)) {
-          setActiveSection(section);
-          break;
-        }
-      }
-    }
+  const changeLanguage = (lang: string) => {
+    i18n.changeLanguage(lang);
   };
 
+  return (
+    <Dropdown>
+      <Dropdown.Toggle variant="link">
+        {i18n.language === 'en' ? '🇺🇸' : '🇫🇷'}
+      </Dropdown.Toggle>
+      <Dropdown.Menu>
+        <Dropdown.Item onClick={() => changeLanguage('en')}>🇺🇸 English</Dropdown.Item>
+        <Dropdown.Item onClick={() => changeLanguage('fr')}>🇫🇷 Français</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+  );
+};
+
+const Menu: React.FC<MenuProps> = ({ navClass, buttonClass, showDownload }) => {
+  const [activeSection, setActiveSection] = useState<string | null>('home-back');
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['home-back', 'pricing-section', 'about-me', 'portfolio-grid', 'contact-me'];
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        const navbarHeight = 70;
+        let offset = 0;
+
+        if (section === 'contact-me') {
+          offset = 480;
+        }
+
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= (navbarHeight + offset) && rect.bottom > (navbarHeight + offset)) {
+            setActiveSection(section);
+            break;
+          }
+        }
+      }
+    };
 
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  const handleClick = (section: string) => { // Ajout de types
+  const handleClick = (section: string) => {
     const element = document.getElementById(section);
     if (element) {
       const yOffset = -70;
@@ -53,8 +70,6 @@ useEffect(() => {
     }
     setActiveSection(section);
   };
-
-  const { t } = useTranslation();
 
   return (
     <Nav as="ul" className={classNames('align-items-lg-center', navClass)}>
@@ -114,6 +129,9 @@ useEffect(() => {
           </a>
         </Nav.Item>
       )}
+      <Nav.Item as="li" className="ms-lg-3"> 
+        <LanguageSwitcher />
+      </Nav.Item>
     </Nav>
   );
 };

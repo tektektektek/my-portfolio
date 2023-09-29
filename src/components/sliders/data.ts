@@ -1,47 +1,34 @@
-// types
 import { Slide } from './types';
 
-// images
 import Avatar1 from '../../assets/images/avatars/avis-1.jpg';
 import Avatar2 from '../../assets/images/avatars/avis-2.png';
 import Avatar3 from '../../assets/images/avatars/avis-3.png';
-import Amazon from '../../assets/images/brands/amazon.svg';
-import Google from '../../assets/images/brands/google.svg';
-
 
 const slides: Slide[] = [
     {
-        statement:
-            ' Working with Amoni has been an exceptional experience. His technical acumen, swift problem-solving abilities, and collaborative approach have been instrumental in the successful realization of my project.',
+        statement: 'slides.slide1.statement',
         customer: {
             avatar: Avatar1,
-            name: 'Ahmadou GUEYE',
-            designation: 'SEO BambaWaves',
+            name: 'slides.slide1.customerName',
+            designation: 'slides.slide1.designation',
         },
-        // logo: Amazon,
     },
     {
-        statement:
-            "Collaborating with Amoni was nothing short of genuinely transformative. His unparalleled communication skills and empathetic understanding of client needs not only met but indeed exceeded our project's ambitious objectives.",
+        statement: 'slides.slide2.statement',
         customer: {
             avatar: Avatar2,
-            name: 'Ilhan GHERMI',
-            designation: 'SEO IntegralForma ',
+            name: 'slides.slide2.customerName',
+            designation: 'slides.slide2.designation',
         },
-        // logo: Google,
     },
     {
-        statement:
-            'Engaging with Amoni was a game-changer for our initiative. His strategic insight, coupled with his remarkable ability to forge meaningful relationships, has been pivotal in elevating our project to new heights.',
+        statement: 'slides.slide3.statement',
         customer: {
             avatar: Avatar3,
-            name: 'Ibrahim TOURE',
-            designation: 'SEO Fraichissime',
+            name: 'slides.slide3.customerName',
+            designation: 'slides.slide3.designation',
         },
-        // logo: Google,
     },
 ];
-
-
 
 export { slides };

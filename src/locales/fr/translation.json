@@ -20,7 +20,7 @@
         "title": "Services",
 
         "website": {
-            "title": "Site Web",
+            "title": "Développement Frontend",
             "description": "En tant qu'expert en développement web, je conçois des solutions numériques alliant esthétique et performance pour catalyser le succès de votre entreprise."
         },
         "graphicDesign": {
@@ -60,7 +60,9 @@
         "feature13": "Intégrations d'API",
         "feature14": "SEO avancé",
         "feature15": "Et bien plus encore",
-        "feature17": "jour"
+        "feature17": "/ jour",
+        "popularLabel": "Populaire",
+        "contactMeLabel": "Contactez-moi"
     },
     "benefits": {
         "badge":"Bénéfices",
@@ -84,7 +86,7 @@
             "description": "Intégration de stratégies SEO avancées pour maximiser la visibilité du site."
         },
         "dedicatedSupport": {
-            "title": "Support Technique Dédié",
+            "title": "Support Technique",
             "description": "Accès à un support rapide et compétent, garantissant une résolution rapide."
         },
         "sustainableInvestment": {
@@ -117,7 +119,56 @@
             "title": "Cosmet",
             "description": "Projet web site Cosmetique."
         }
-    }
-
-    
+    },
+    "testimonial": {
+        "title": "Des mots aimables d'excellents clients"
+    },
+    "slides": {
+        "slide1": {
+            "statement": "Travailler avec Amoni a été une expérience exceptionnelle. Sa perspicacité technique, sa capacité à résoudre rapidement les problèmes et son approche collaborative ont joué un rôle déterminant dans la réalisation de mon projet.",
+            "customerName": "Ahmadou GUEYE",
+            "designation": "SEO BambaWaves"
+        },
+        "slide2": {
+            "statement": "Collaborer avec Amoni a été une véritable transformation. Ses compétences inégalées en matière de communication et sa compréhension empathique des besoins ont non seulement permis d'atteindre, mais aussi de dépasser les objectifs de notre projet",
+            "customerName": "Ilhan GHERMI",
+            "designation": "SEO IntegralForma"
+        },
+        "slide3": {
+            "statement": "L'engagement d'Amoni a changé la donne pour notre initiative. Sa perspicacité stratégique, associée à sa remarquable capacité à nouer des relations significatives, a joué un rôle essentiel dans l'élévation de notre projet vers de nouveaux sommets",
+            "customerName": "Ibrahim TOURE",
+            "designation": "SEO Fraichissime"
+        }
+    },
+    "contact": {
+        "title": "Poursuivons notre conversation",
+        "description": "Veuillez remplir le formulaire suivant et je vous répondrais rapidement",
+        "form": {
+            "fname": "Prénom",
+            "fnameRequired": "Veuillez entrer votre prénom",
+            "fnamePlaceholder": "Votre prénom",
+            "lname": "Nom",
+            "lnameRequired": "Veuillez entrer votre nom",
+            "lnamePlaceholder": "Votre nom",
+            "email": "Email",
+            "emailRequired": "Veuillez entrer votre email",
+            "emailInvalid": "Veuillez entrer un email valide",
+            "emailPlaceholder": "Votre email",
+            "message": "Message",
+            "messageRequired": "Veuillez entrer un message",
+            "messagePlaceholder": "Tapez votre message ...",
+            "sendButton": "Envoyer"
+        },
+        "email": "Email",
+        "phone": "Téléphone",
+        "address": "Adresse"
+    },
+    "footer": {
+        "home": "Accueil",
+        "pricing": "Tarifs",
+        "aboutMe": "À propos",
+        "portfolio": "Projets",
+        "contact": "Contact",
+        "copyright": "Amoni. Tous droits réservés."
+      }
 }

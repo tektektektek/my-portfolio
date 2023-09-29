@@ -5,18 +5,21 @@ import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import FeatherIcon from 'feather-icons-react';
+import { useTranslation } from 'react-i18next';
 
 // components
 import { FormInput } from 'components/form';
 
 const ContactUs = () => {
+    const { t } = useTranslation();
+
     // form validation schema
     const schemaResolver = yupResolver(
         yup.object().shape({
-            fname: yup.string().required('Please enter first name'),
-            lname: yup.string().required('Please enter last name'),
-            email: yup.string().required('Please enter Email').email('Please enter valid Email'),
-            message: yup.string().required('Please enter Message'),
+            fname: yup.string().required(t('contact.form.fnameRequired')),
+            lname: yup.string().required(t('contact.form.lnameRequired')),
+            email: yup.string().required(t('contact.form.emailRequired')).email(t('contact.form.emailInvalid')),
+            message: yup.string().required(t('contact.form.messageRequired')),
         })
     );
 
@@ -39,9 +42,9 @@ const ContactUs = () => {
                     <Col lg={6}>
                         <Card className="shadow-none">
                             <Card.Body className="p-xl-5 p-0">
-                                <h2 className="mb-2 mt-0 fw-medium mt-6">Let's Talk Further</h2>
+                                <h2 className="mb-2 mt-0 fw-medium mt-6">{t('contact.title')}</h2>
                                 <p className="mb-5">
-                                    Please fill out the following form and we will get back to you shortly
+                                    {t('contact.description')}
                                 </p>
 
                                 <form onSubmit={handleSubmit(onSubmit)}>
@@ -50,8 +53,8 @@ const ContactUs = () => {
                                             <FormInput
                                                 type="text"
                                                 name="fname"
-                                                label="First Name"
-                                                placeholder="Your First Name"
+                                                label={t('contact.form.fname')}
+                                                placeholder={t('contact.form.fnamePlaceholder')}
                                                 containerClass={'mb-3'}
                                                 register={register}
                                                 errors={errors}
@@ -62,8 +65,8 @@ const ContactUs = () => {
                                             <FormInput
                                                 type="text"
                                                 name="lname"
-                                                label="Last Name"
-                                                placeholder="Your Last Name"
+                                                label={t('contact.form.lname')}
+                                                placeholder={t('contact.form.lnamePlaceholder')}
                                                 containerClass={'mb-3'}
                                                 register={register}
                                                 errors={errors}
@@ -74,8 +77,8 @@ const ContactUs = () => {
                                             <FormInput
                                                 type="email"
                                                 name="email"
-                                                label="Email Name"
-                                                placeholder="Your Email"
+                                                label={t('contact.form.email')}
+                                                placeholder={t('contact.form.emailPlaceholder')}
                                                 containerClass={'mb-3'}
                                                 register={register}
                                                 errors={errors}
@@ -86,8 +89,8 @@ const ContactUs = () => {
                                             <FormInput
                                                 type="textarea"
                                                 name="message"
-                                                label="Message"
-                                                placeholder="Type Your message..."
+                                                label={t('contact.form.message')}
+                                                placeholder={t('contact.form.messagePlaceholder')}
                                                 rows={5}
                                                 containerClass={'mb-3'}
                                                 register={register}
@@ -97,7 +100,7 @@ const ContactUs = () => {
                                         </Col>
                                         <Col lg="auto" className="mb-0">
                                             <Button type="submit" className="btn-info">
-                                                Send
+                                                {t('contact.form.sendButton')}
                                                 <span className="icon icon-xs text-white ms-1">
                                                     <FeatherIcon icon="send" />
                                                 </span>
@@ -123,7 +126,7 @@ const ContactUs = () => {
                                 <FeatherIcon icon="mail" className="icon-dual-primary" />
                             </span>
                             <div className="flex-grow-1">
-                                <h5 className="m-0 fw-medium">Email</h5>
+                                <h5 className="m-0 fw-medium">{t('contact.email')}</h5>
                                 <Link to="mailto:mail@amoni.me" className="text-muted fw-normal h5 my-1">
                                     mail@amoni.me
                                 </Link>
@@ -137,7 +140,7 @@ const ContactUs = () => {
                                 <FeatherIcon icon="phone-call" className="icon-dual-orange" />
                             </span>
                             <div className="flex-grow-1">
-                                <h5 className="m-0 fw-medium">Phone</h5>
+                                <h5 className="m-0 fw-medium">{t('contact.phone')}</h5>
                                 <Link to="#" className="text-muted fw-normal h5 my-1">
                                     +33 7 69 54 98 85
                                 </Link>
@@ -151,7 +154,7 @@ const ContactUs = () => {
                                 <FeatherIcon icon="map-pin" className="icon-dual-info" />
                             </span>
                             <div className="flex-grow-1">
-                                <h5 className="m-0 fw-medium">Address</h5>
+                                <h5 className="m-0 fw-medium">{t('contact.address')}</h5>
                                 <Link to="#" className="text-muted fw-normal h5 my-1">
                                     Paris
                                 </Link>
