@@ -3,6 +3,8 @@ import { Col, Container, Nav, Row, Tab } from 'react-bootstrap';
 import FeatherIcon from 'feather-icons-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Autoplay, Navigation, Pagination } from 'swiper';
+import { useTranslation } from 'react-i18next';
+
 
 // types
 import { Project} from './types';
@@ -15,13 +17,15 @@ type ProjectsProps = {
 };
 
 const Projects = ({ projects }: ProjectsProps) => {
+    const { t } = useTranslation();
     return (
         <section id='portfolio-grid' className="pt-6 pb-3 position-relative">
             <Container>
                 <Tab.Container defaultActiveKey="pills-design-tab">
                     <Row className="justify-content-center">
                         <Col className="text-start">
-                            <h1 className="display-5 fw-medium">Latest Projects</h1>
+                            <h1 className="display-5 fw-medium">{t('portfolioProjects.title')}</h1>
+                            <p className="text-muted mx-auto pt-3">{t('portfolioProjects.text')}</p>
                         </Col>
                         {/* <Col xs="auto">
                             <Nav
@@ -84,7 +88,7 @@ const Projects = ({ projects }: ProjectsProps) => {
                                                             to="#"
                                                             className="btn btn-info btn-sm btn-view shadow-lg"
                                                         >
-                                                            View Project
+                                                            {t('portfolioProjects.viewButton')}
                                                             <FeatherIcon
                                                                 icon="arrow-right"
                                                                 className="icon-xs ms-2"

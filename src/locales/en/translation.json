@@ -60,6 +60,61 @@
         "feature15": "And much more",
         "feature16": "starting from",
         "feature17": "day"
+    },
+    "benefits": {
+        "badge":"Bénéfits",
+        "title": "I take care of our clients",
+        "joinTeam":"Benefits from working together",
+
+        "provenExpertise": {
+            "title": "Proven Expertise",
+            "description": "Benefit from advanced web design backed by years of experience and technological mastery."
+        },
+        "industrySpecificAdaptability": {
+            "title": "Industry-Specific Adaptability",
+            "description": "Tailored solutions to suit a variety of business sectors, ensuring optimal visibility and efficacy."
+        },
+        "unparalleledSecurity": {
+            "title": "Unparalleled Security",
+            "description": "Implementation of stringent security practices for comprehensive protection of your website."
+        },
+        "advancedSEO": {
+            "title": "Advanced SEO Optimization",
+            "description": "Integration of advanced SEO strategies to maximize site visibility and drive qualified traffic."
+        },
+        "dedicatedSupport": {
+            "title": "Dedicated Technical Support",
+            "description": "Access to rapid and proficient support, ensuring timely resolution of any and all issues."
+        },
+        "sustainableInvestment": {
+            "title": "Sustainable Investment",
+            "description": "Comprehensive service from design to maintenance ensures a sustainable, profitable investment."
+        }
+    },
+    "portfolioHero": {
+        "title": "Gain Access to My Professional Journey",
+        "description": "I invite you to explore my curriculum vitae, a narrative of ceaseless dedication in the realm of front-end development and data analysis. You will find therein a distinguished portfolio of service offerings, from responsive web design to cutting-edge innovations in Cosmos SDK and Web3 technologies.",
+        "downloadButton": "Download CV"
+    },
+    "portfolioProjects": {
+        "title": "Latest Projects",
+        "viewButton": "View Project",
+        "text": "In accordance with confidentiality agreements, I am precluded from showcasing client-specific endeavors; instead, I proffer personal projects which closely mirror the calibre and scope of my commissioned works."
+
+    },
+    "projects": {
+        "project1": {
+            "title": "ComPrice",
+            "description": "Accounting website project."
+        },
+        "project2": {
+            "title": "NexaSecure",
+            "description": "Cybersecurity website project."
+        },
+        "project3": {
+            "title": "Cosmet",
+            "description": "Cosmetics website project."
+        }
     }
 
 }

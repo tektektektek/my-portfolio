@@ -19,7 +19,7 @@ const Benefits = ({ benefits }: BenefitsProps) => {
                 <Row>
                     <Col className="text-center">
                         <Badge pill bg="" className="badge-soft-info px-2 py-1">
-                            Benefits
+                        {t("benefits.badge")}
                         </Badge>
                         <h1 className="display-5 fw-semibold">{t("benefits.title")}</h1>
                         <p className="text-muted mx-auto">{t("benefits.joinTeam")}</p>

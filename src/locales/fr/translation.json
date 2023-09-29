@@ -29,7 +29,9 @@
         },
         "videoEditor": {
             "title": "Monteur vidéo",
-            "description": "Bien que mon expertise principale réside dans le développement web, je possède également des compétences en montage vidéo, ce qui me permet de produire un contenu multimédia enrichissant."
+            "description": "Bien que mon expertise principale réside dans le développement web, je possède également des compétences en montage vidéo, ce qui me permet de produire un contenu multimédia."
+
+            
         }
     },
     "pricing": {
@@ -58,8 +60,63 @@
         "feature13": "Intégrations d'API",
         "feature14": "SEO avancé",
         "feature15": "Et bien plus encore",
-        "feature16": "à partir de",
         "feature17": "jour"
+    },
+    "benefits": {
+        "badge":"Bénéfices",
+        "title": "Je prends soin de mes clients",
+        "joinTeam":"Les avantages d'une collaboration",
+
+        "provenExpertise": {
+            "title": "Expertise Éprouvée",
+            "description": "Conception web avancée soutenue par des années d'expérience et une maîtrise technologique."
+        },
+        "industrySpecificAdaptability": {
+            "title": "Adaptabilité Spécifique à l'Industrie",
+            "description": "Solutions sur mesure pour répondre à une variété de secteurs d'activité."
+        },
+        "unparalleledSecurity": {
+            "title": "Sécurité Inégalée",
+            "description": "Mise en œuvre de pratiques de sécurité rigoureuses pour une protection complète de votre site web."
+        },
+        "advancedSEO": {
+            "title": "Optimisation SEO Avancée",
+            "description": "Intégration de stratégies SEO avancées pour maximiser la visibilité du site."
+        },
+        "dedicatedSupport": {
+            "title": "Support Technique Dédié",
+            "description": "Accès à un support rapide et compétent, garantissant une résolution rapide."
+        },
+        "sustainableInvestment": {
+            "title": "Investissement Durable",
+            "description": "Un service complet, garantissant un investissement rentable et durable."
+        }
+
+    },
+    "portfolioHero": {
+        "title": "Mon Parcours Professionnel",
+        "description": "Je vous invite à explorer mon curriculum vitae, un récit de dévouement inlassable dans le domaine du développement front-end et de l'analyse de données. Vous y trouverez un portfolio distingué d'offres de services, allant du design web responsive aux innovations de pointe dans les technologies Cosmos SDK et Web3.",
+        "downloadButton": "Télécharger le CV"
+    },
+    "portfolioProjects": {
+        "title": "Derniers Projets",
+        "viewButton": "Voir le Projet",
+        "text": "En vertu de clauses de confidentialité, il m'est interdit de divulguer les projets clients réalisés ; je vous présente donc des projets personnels, étroitement liés en termes d'expertise et de compétence."
+
+    },
+    "projects": {
+        "project1": {
+            "title": "ComPrice",
+            "description": "Projet web site comptable."
+        },
+        "project2": {
+            "title": "NexaSecure",
+            "description": "Projet web site cybersécurité."
+        },
+        "project3": {
+            "title": "Cosmet",
+            "description": "Projet web site Cosmetique."
+        }
     }
 
     

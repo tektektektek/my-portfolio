@@ -20,7 +20,7 @@ const plans: PlanItem[] = [
     {
         id: 2,
         name: i18n.t("pricing.basicWebsiteName"),
-        duration: i18n.t("pricing.startingFrom") + ' ' + i18n.t("pricing.feature16"),
+        duration: i18n.t("pricing.startingFrom"),
         price: '320',
         duration2:'/ ' + i18n.t("pricing.feature17"),
         features: [
@@ -36,7 +36,7 @@ const plans: PlanItem[] = [
     {
         id: 3,
         name: i18n.t("pricing.premiumWebsiteName"),
-        duration: i18n.t("pricing.startingFrom") + ' ' + i18n.t("pricing.feature16"),
+        duration: i18n.t("pricing.startingFrom"),
         price: '500',
         duration2:'/ ' + i18n.t("pricing.feature17"),
         features: [
