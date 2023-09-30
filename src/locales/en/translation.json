@@ -107,15 +107,19 @@
     "projects": {
         "project1": {
             "title": "ComPrice",
-            "description": "Accounting website project."
+            "description": "Accounting website project | HTML/SCSS/JS"
         },
         "project2": {
             "title": "NexaSecure",
-            "description": "Cybersecurity website project."
+            "description": "Cybersecurity website project | HTML/SCSS/JS"
         },
         "project3": {
             "title": "Cosmet",
-            "description": "Cosmetics website project."
+            "description": "Cosmetics website project | HTML/SCSS/JS"
+        },
+        "project4": {
+            "title": "Dupont",
+            "description": "Life Coach website project | HTML/SCSS/ReactJS"
         }
     },
     "testimonial": {

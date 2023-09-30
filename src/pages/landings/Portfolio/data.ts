@@ -5,6 +5,8 @@ import { Project, Service } from './types';
 import ProjectImg1 from 'assets/images/features/agency1.jpg';
 import ProjectImg2 from 'assets/images/features/agency2.jpg';
 import ProjectImg3 from 'assets/images/features/agency3.jpg';
+import ProjectImg4 from 'assets/images/features/agency4.jpg';
+
 
 
 const services: Service[] = [
@@ -41,6 +43,11 @@ const projects: Project[] = [
         title: 'projects.project3.title',
         description: 'projects.project3.description',
         image: ProjectImg3,
+    },
+    {
+        title: 'projects.project4.title',
+        description: 'projects.project4.description',
+        image: ProjectImg4,
     },
 ];
 

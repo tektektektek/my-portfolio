@@ -43,7 +43,7 @@
 
         "starterWebsiteName": "Site Web de Démarrage",
         "basicWebsiteName": "Site Web Professionnel",
-        "premiumWebsiteName": "Site Web d'Entreprise",
+        "premiumWebsiteName": "Site Web Entreprise",
         "startingFrom": "à partir de",
         "feature1": "Optimisation du budget",
         "feature2": "Présence en ligne",
@@ -109,15 +109,19 @@
     "projects": {
         "project1": {
             "title": "ComPrice",
-            "description": "Projet web site comptable."
+            "description": "Projet site comptable | HTML/SCSS/JS"
         },
         "project2": {
             "title": "NexaSecure",
-            "description": "Projet web site cybersécurité."
+            "description": "Projet site cybersécurité | HTML/SCSS/JS"
         },
         "project3": {
             "title": "Cosmet",
-            "description": "Projet web site Cosmetique."
+            "description": "Projet site Cosmetique | HTML/SCSS/JS"
+        },
+        "project4": {
+            "title": "Dupont",
+            "description": "Projet site Coach de Vie | HTML/SCSS/ReactJS"
         }
     },
     "testimonial": {
